@@ -3,7 +3,7 @@ package model;
 public class Seminario extends Evento {
     private String tema;
     private Participante alunoApresentador;
-    private PessoaResponsavel orientador; // Can be an Instrutor or Organizador, or other responsible person.
+    private PessoaResponsavel orientador;
 
     public Seminario(String titulo, String data, int duracao, String orcamento, Sala sala, String tema, Participante alunoApresentador, PessoaResponsavel orientador) {
         super(titulo, data, duracao, orcamento, sala);
