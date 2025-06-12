@@ -1,4 +1,3 @@
-// Seminario.java
 package model;
 
 public class Seminario extends Evento {

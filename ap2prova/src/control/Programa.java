@@ -24,29 +24,31 @@ public class Programa {
         Participante p2 = new Participante("Aluno B", "222.222.222-22", "alunoB@aluno.com", "Ciência da Computação");
         Participante p3 = new Participante("Aluno C", "333.333.333-33", "alunoC@aluno.com", "Análise de Sistemas");
 
-        // Eventos
+
 
         // Materiais para Minicurso
         Set<String> materiaisMinicurso = new HashSet<>();
         materiaisMinicurso.add("Livro Básico de Java");
         materiaisMinicurso.add("Slides do Curso");
 
+        // Eventos
         Palestra palestra1 = new Palestra("Introdução à POO", "2025-07-10", 2, "R$ 500.00", sala1, palestrante1);
         Minicurso minicurso1 = new Minicurso("Java Avançado", "2025-07-15", 4, "R$ 800.00", lab1, instrutor1, 8, materiaisMinicurso);
         Seminario seminario1 = new Seminario("Carreiras em TI", "2025-07-20", 3, "R$ 600.00", auditorio1, "Mercado de Trabalho", p1, organizador1);
 
 
-        // --- ASSOCIAÇÃO DE OBJETOS ---
 
         // Adicionar eventos ao organizador
         organizador1.addEvento(palestra1);
         organizador1.addEvento(minicurso1);
         organizador1.addEvento(seminario1);
 
+
         // Adicionar participantes aos eventos
         palestra1.addParticipante(p1);
         palestra1.addParticipante(p2);
 
+        // Adicionar participante no minicurso
         minicurso1.addParticipante(p1);
         minicurso1.addParticipante(p3);
 

@@ -1,4 +1,3 @@
-// Sala.java
 package model;
 
 public class Sala extends Local {

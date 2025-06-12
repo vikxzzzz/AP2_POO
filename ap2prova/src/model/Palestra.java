@@ -1,4 +1,3 @@
-// Palestra.java (Modified)
 package model;
 
 public class Palestra extends Evento{

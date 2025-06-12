@@ -13,7 +13,6 @@ public class Instrutor extends PessoaResponsavel{
 
 
     //GET E SET
-
     public String getFormcao() {
         return formcao;
     }

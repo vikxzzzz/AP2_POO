@@ -1,4 +1,3 @@
-// PessoaResponsavel.java
 package model;
 
 public abstract class PessoaResponsavel {

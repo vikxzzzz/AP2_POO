@@ -1,4 +1,3 @@
-// Evento.java (Modified)
 package model;
 
 import java.util.HashSet;
@@ -10,11 +9,11 @@ public abstract class Evento {
     private String data;
     private int duracao;
     private String orcamento;
-    private Local local; // Changed to a single Local attribute
+    private Local local;
     private Set<Participante> participantes;
 
 
-    public Evento(String titulo, String data, int duracao, String orcamento, Local local) { // Modified constructor
+    public Evento(String titulo, String data, int duracao, String orcamento, Local local) {
         this.titulo = titulo;
         this.data = data;
         this.duracao = duracao;
@@ -65,11 +64,11 @@ public abstract class Evento {
         this.orcamento = orcamento;
     }
 
-    public Local getLocal() { // New getter for generic Local
+    public Local getLocal() {
         return local;
     }
 
-    public void setLocal(Local local) { // New setter for generic Local
+    public void setLocal(Local local) {
         this.local = local;
     }
 

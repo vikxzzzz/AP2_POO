@@ -1,4 +1,3 @@
-// Local.java (Modified)
 package model;
 
 public class Local {
@@ -26,7 +25,6 @@ public class Local {
         return blocoPredio;
     }
 
-    // SETTERS (optional, depending on whether these attributes can be changed after creation)
     public void setNome(String nome) {
         this.nome = nome;
     }

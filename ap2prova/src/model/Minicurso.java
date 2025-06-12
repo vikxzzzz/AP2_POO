@@ -1,28 +1,26 @@
-// Minicurso.java (Modificado para um único Instrutor)
 package model;
 
-import java.util.HashSet;
-import java.util.Set; // Ainda pode ser necessário para 'materias'
+import java.util.*;
 
 public class Minicurso extends Evento {
 
-    private Instrutor instrutor; // Alterado para um único Instrutor
+    private Instrutor instrutor;
     private int cargaHoraria;
-    private Set<String> materias; // Mantém-se como Set para materiais
+    private Set<String> materias;
 
     public Minicurso(String titulo, String data, int duracao, String orcamento, Local local, Instrutor instrutor, int cargaHoraria, Set<String> materias) {
         super(titulo, data, duracao, orcamento, local);
-        this.instrutor = instrutor; // Atribui o único instrutor
+        this.instrutor = instrutor;
         this.cargaHoraria = cargaHoraria;
         this.materias = materias;
     }
 
     // GET E SET
-    public Instrutor getInstrutor() { // Getter para um único instrutor
+    public Instrutor getInstrutor() {
         return instrutor;
     }
 
-    public void setInstrutor(Instrutor instrutor) { // Setter para um único instrutor
+    public void setInstrutor(Instrutor instrutor) {
         this.instrutor = instrutor;
     }
 
